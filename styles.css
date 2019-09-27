@@ -1,0 +1,146 @@
+@font-face {
+    font-family: lucida;
+    src: url("assets/fonts/lucida_sans/l_10646.ttf");
+}
+
+@font-face {
+    font-family: 'Segoe WP';
+    src: url('assets/fonts/segoe-wp/SegoeWP.ttf');
+    }
+
+*{
+    padding: 0;
+    margin: auto;
+}
+
+body {
+    width: 1300px;
+}
+
+main {
+    background-image: url("assets/images/background.png");
+}
+
+header {
+    position: relative;
+    height: 140px;
+    max-width: 1040px;
+}
+
+#logo-1 {
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 28px;
+}
+
+#logo-2 {
+    position: absolute;
+    padding-left: 12px;
+    padding-top: 29px;
+}
+
+header h1 {
+    padding-left: 97px;
+    padding-top: 45px;
+    font-family: "lucida";
+    font-style: italic;
+    font-size: 41px;
+    font-weight: normal;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
+}
+
+/* button 173 41 
+133 41 
+148 41
+*/
+
+nav {
+    position: absolute;
+    margin-left: 577px;
+    margin-top: 71px;
+    box-shadow: -4px -5px 0px 0px rgba(245, 197, 6, 0.27), -8px -8px 0px 0px rgba(245, 197, 6, 0.27);
+}
+
+nav button {
+    position: relative;
+    padding: 0;
+    font-family: 'Segoe WP';
+    font-size: 17px;
+    color: #9b7d08;
+    border: 0;
+    background-color: #f5c506;
+    z-index: 3;
+}
+
+button img {
+    position: absolute;
+}
+
+nav #about {
+    width: 172px;
+    height: 41px;
+    margin-right: -3px;
+}
+
+nav #services {
+    width: 132px;
+    height: 41px;
+    margin-right: -3px;
+}
+
+nav #contact {
+    width: 147px;
+    height: 41px;
+}
+
+nav #button-line-1 {
+    position: absolute;
+    width: 307px;
+    height: 40px;
+    background-color: rgb(220,177,5);
+    z-index: 2;
+}
+
+nav #button-line-2 {
+    position: absolute;
+    width: 307px;
+    height: 1px;
+    margin-top: 40px;
+    background-color: #f5c506;
+    z-index: 1;
+}
+
+#about {
+    padding-bottom: 1px;
+    padding-left: 70px;
+    text-align: left;
+}
+
+#services {
+    padding-bottom: 1px;
+    padding-left: 42px;
+    text-align: left;
+}
+
+#contact{
+    padding-bottom: 1px;
+    padding-left: 49px;
+    text-align: left;
+}
+
+#about img {
+    left: 39px;
+    top: 11px;
+}
+
+#services img {
+    left: 14px;
+    top: 11px;
+}
+
+#contact img {
+    left: 17px;
+    top: 11px;
+}
