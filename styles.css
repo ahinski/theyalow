@@ -6,7 +6,12 @@
 @font-face {
     font-family: 'Segoe WP';
     src: url('assets/fonts/segoe-wp/SegoeWP.ttf');
-    }
+}
+
+@font-face {
+    font-family: 'Asap Regular';
+     src: url('assets/fonts/asap regular/Asap-Regular.otf');
+}
 
 *{
     padding: 0;
@@ -19,27 +24,31 @@ body {
 
 main {
     background-image: url("assets/images/background.png");
+    height: 566px;
 }
 
-header {
+/* HEADER */
+
+.header {
     position: relative;
     height: 140px;
     max-width: 1040px;
+    margin-bottom: 28px;
 }
 
-#logo-1 {
+.logo-1 {
     position: absolute;
     padding-left: 10px;
     padding-top: 28px;
 }
 
-#logo-2 {
+.logo-2 {
     position: absolute;
     padding-left: 12px;
     padding-top: 29px;
 }
 
-header h1 {
+h1 {
     padding-left: 97px;
     padding-top: 45px;
     font-family: "lucida";
@@ -51,19 +60,16 @@ header h1 {
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
 }
 
-/* button 173 41 
-133 41 
-148 41
-*/
-
-nav {
+.navbar {
     position: absolute;
     margin-left: 577px;
     margin-top: 71px;
     box-shadow: -4px -5px 0px 0px rgba(245, 197, 6, 0.27), -8px -8px 0px 0px rgba(245, 197, 6, 0.27);
 }
 
-nav button {
+/* nav buttons */
+
+.navbar button {
     position: relative;
     padding: 0;
     font-family: 'Segoe WP';
@@ -78,24 +84,9 @@ button img {
     position: absolute;
 }
 
-nav #about {
-    width: 172px;
-    height: 41px;
-    margin-right: -3px;
-}
+/* lines between buttons */
 
-nav #services {
-    width: 132px;
-    height: 41px;
-    margin-right: -3px;
-}
-
-nav #contact {
-    width: 147px;
-    height: 41px;
-}
-
-nav #button-line-1 {
+.button-line-1 {
     position: absolute;
     width: 307px;
     height: 40px;
@@ -103,7 +94,7 @@ nav #button-line-1 {
     z-index: 2;
 }
 
-nav #button-line-2 {
+.button-line-2 {
     position: absolute;
     width: 307px;
     height: 1px;
@@ -113,21 +104,36 @@ nav #button-line-2 {
 }
 
 #about {
+    width: 172px;
+    height: 41px;
+    margin-right: -3px;
     padding-bottom: 1px;
     padding-left: 70px;
     text-align: left;
 }
 
 #services {
+    width: 132px;
+    height: 41px;
+    margin-right: -3px;
     padding-bottom: 1px;
     padding-left: 42px;
     text-align: left;
 }
 
 #contact{
+    width: 147px;
+    height: 41px;
     padding-bottom: 1px;
     padding-left: 49px;
     text-align: left;
+}
+
+#about:hover,
+#services:hover,
+#contact:hover {
+    border: 1px solid rgb(155,125,8);
+    box-shadow: 0px 0px 10px 1px rgba(155,125,8,0.75);
 }
 
 #about img {
@@ -143,4 +149,87 @@ nav #button-line-2 {
 #contact img {
     left: 17px;
     top: 11px;
+}
+
+/* SLIDER */
+
+/*slider buttons*/
+
+.left-slider {
+    position: absolute;
+    width: 32px;
+    height: 57px;
+    top: 300px;
+    text-align: center;
+    border: 0;
+    background-color: #c5a10b;
+}
+
+.left-slider img {
+    left: 8px;
+    top: 19px;
+}
+
+.right-slider {
+    position: absolute;
+    width: 32px;
+    height: 57px;
+    margin-left: 1268px;
+    top: 300px;
+    text-align: center;
+    border: 0;
+    background-color: #f5c506;
+}
+
+.right-slider img {
+    left: 11px;
+    top: 18px;
+}
+
+.left-slider:hover,
+.right-slider:hover {
+    border: 1px solid rgb(155,125,8);
+    box-shadow: 0px 0px 10px 1px rgba(155,125,8,0.75);
+}
+
+/* video and heading */
+
+.slider-content {
+    width: 1040px;
+}
+
+.video {
+    position: relative;
+    display: inline-block;
+    width: 549px;
+    height: 327px;
+    margin-left: 20px;
+}
+
+video {
+    width: 549px;
+    height: 327px;
+}
+
+h2 {
+    font-family: 'Asap Regular';
+    font-size: 63px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.cool {
+    position: relative;
+    display: inline-block;
+    bottom: 192px;
+    left: 86px;
+    color: #f5c506;
+}   
+
+.minimal {
+    position: relative;
+    display: inline-block;
+    left: 619px;
+    bottom: 195px;
+    color: white;
 }
