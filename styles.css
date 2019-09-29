@@ -57,6 +57,16 @@ body {
     height: 566px;
 }
 
+@media screen and (max-width: 640px) {
+    body {
+        width: 640px;
+    }
+
+    .main {
+        height: 148px;
+    }
+}
+
 /* HEADER */
 
 .header {
@@ -73,6 +83,7 @@ body {
 }
 
 h1 {
+    position: absolute;
     padding-left: 97px;
     padding-top: 45px;
     font-family: "lucida";
@@ -89,6 +100,42 @@ h1 {
     margin-left: 577px;
     margin-top: 71px;
     box-shadow: -4px -5px 0px 0px rgba(245, 197, 6, 0.27), -8px -8px 0px 0px rgba(245, 197, 6, 0.27);
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        height: 62px;
+        background: linear-gradient(to bottom, #626262 0%,#464646 100%);
+        margin: 0;
+    }
+
+    .logo {
+        position: relative;
+        width: 40px;
+        height: 39px;
+        padding-left: 12px;
+        padding-top: 11px;
+    }
+    h1 {
+        position: relative;
+        display: inline-block;
+        bottom: 10px;
+        right: 17px;
+        padding: 0 0 0 18px;
+        font-size: 19.3px;
+    }
+
+    .navbar {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        width: 454px;
+        margin: 0 0 0 4px;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        bottom: 12px;
+    }
+
+
 }
 
 /* nav buttons */
@@ -175,6 +222,55 @@ button img {
     top: 11px;
 }
 
+@media screen and (max-width: 640px) {
+    .navbar button {
+        display: inline-block;
+        height: 100%;
+        font-size: 19px;
+    }
+
+    .navbar img {
+        height: 24px;
+        width: 22px;
+    }
+
+    #about {
+        width: 171px;
+        height: 100%;
+        margin: 0;
+        padding-bottom: 0;
+        padding-left: 70px;
+        vertical-align: bottom;
+        text-align: left;
+    }
+    
+    #services {
+        width: 132px;
+        height: 100%;
+        margin: 0;
+        padding-bottom: 0;
+        margin-left: -3px;
+        padding-left: 42px;
+        text-align: left;
+    }
+    
+    #contact{
+        width: 149px;
+        height: 100%;
+        margin: 0;
+        margin-left: -3px;
+        padding-bottom: 0;
+        padding-left: 49px;
+        text-align: left;
+    }
+
+    .button-line-1 {
+        height: 100%;
+    }
+
+}
+
+
 /* SLIDER */
 
 /*slider buttons*/
@@ -231,6 +327,10 @@ button img {
     margin-left: 20px;
 }
 
+.video-mobile {
+    display: none;
+}
+
 video {
     width: 549px;
     height: 327px;
@@ -257,6 +357,64 @@ h2 {
     left: 619px;
     bottom: 195px;
     color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .slider button,
+    .cool,
+    .minimal,
+    .right-slider,
+    .left-slider {
+        display: none;
+    }
+
+    .header {
+        height: 62px;
+    }
+    .logo {
+        position: relative;
+        width: 40px;
+        height: 39px;
+        padding-left: 12px;
+        padding-top: 11px;
+    }
+
+    .slider {
+        position: relative;
+        display: inline-block;
+        width: 640px;
+        height: 327px;
+    }
+
+    .slider-content {
+        position: relative;
+        display: inline-block;
+        width: 640px;
+        height: 327px;
+    }
+
+    .video {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 549px;
+        height: 327px;
+        margin: 0;
+    }
+    
+    video {
+        width: 640px;
+        height: 327px;
+    }
+
+    .video-desktop {
+        display: none;
+    }
+
+    .video-mobile {
+        display: inline-block;
+    }
 }
 
 /* advantages */
@@ -344,6 +502,96 @@ h3:nth-child(1) {
     top: 54px;
 }
 
+@media screen and (max-width: 640px) {
+    .advantages {
+        display: inline-block;
+        position: relative;
+        width: 640px;
+        height: 165px;
+        margin-top: -3px;
+        /* box-shadow: 0px -1px 6px 1px rgba(0,0,0,0.5); */
+        background-image: url("assets/images/advan-back.png");
+        z-index: 2;
+    }
+    
+    .advantages-content {
+        width: 640px;
+        height: 165px;
+    }
+
+    .better-design {
+        display: inline-block;
+        width: 33%;
+        height: 165px;
+        vertical-align: bottom;
+        border-left: 0;
+        border-right: 0;
+    }
+    
+    .customise {
+        display: inline-block;
+        width: 33%;
+        height: 165px;
+        vertical-align: bottom;
+        border-right: 0;
+    }
+    
+    .its-free {
+        display: inline-block;
+        width: 32%;
+        height: 165px;
+        vertical-align: bottom;
+        border-right: 0;
+    }
+
+    h3 {
+        position: relative;
+        font-family: "Segoe UI";
+        font-weight: 100;
+        font-size: 23px;
+    }
+
+    .better-design h3 {
+        left: 17px;
+        top: 45px;
+    }
+    
+    .customise h3 {
+        left: 54px;
+        top: 37px;
+    }
+    
+    .its-free h3 {
+        left: 64px;
+        top: 37px;
+    }
+
+    .better-design img {
+        position: relative;
+        width: 89px;
+        height: 61px;
+        left: 45px;
+        top: 33px;
+    }
+    
+    .customise img {
+        position: relative;
+        width: 67px;
+        height: 69px;
+        left: 80px;
+        top: 29px;
+    }
+    
+    .its-free img {
+        position: relative;
+        width: 68px;
+        height: 69px;
+        left: 67px;
+        top: 29px;
+    }
+
+}
+
 /* RANGE-CONTENT */
 
 .range {
@@ -410,6 +658,10 @@ input[type="button"]:first-child {
     background: url("assets/images/plus.svg") no-repeat top;
 }
 
+input[type="button"]:first-child:hover {
+    border: 1px solid black;
+}
+
 .twitter {
     display: inline-block;
     width: 329px;
@@ -441,6 +693,10 @@ input[type="button"]:first-child {
     left: 1138px;
     border: 0;
     background: url("assets/images/plus.svg") no-repeat top;
+}
+
+.twitter input[type="button"]:hover {
+    border: 1px solid black;
 }
 
 .calendar {
@@ -651,6 +907,145 @@ input[type=range]:focus::-ms-fill-upper {
     background: #fae693;
   }
   
+@media screen and (max-width: 640px) {
+    input[type=range] {
+        display: none;
+    }
+
+    .slidecontainer,
+    .calendar,
+    h4,
+    p {
+        display: none;
+    }
+
+    .range {
+        position: relative;
+        background-image: url("assets/images/range-back.png");
+        height: 508px;
+        width: 1300px;
+        z-index: 1;
+    }
+    
+    .range-content {
+        height: 508px;
+        width: 1040px;
+        z-index: 1;
+    }
+    
+    h4 {
+        padding-left: 11px;
+        padding-top: 32px;
+        font-family: "pt_sansregular";
+        font-size: 37px;
+        font-weight: normal;
+        color: white;
+    }
+    
+    .main-content {
+        height: 233px;
+        margin: 31px 0 0 9px;
+        text-align: left;
+    }
+    
+    .video-desc {
+        display: inline-block;
+        width: 311px;
+        height: 217px;
+        padding-left: 30px;
+        padding-top: 16px;
+        font-family: "Segoe WP Light";
+        font-size: 29px;
+        font-weight: 10;
+        color: white;
+        background-color: #ec9e03;
+        vertical-align: top;
+    }
+    
+    .main-content video {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        width: 315px;
+        height: 232px;
+        margin-left: -4px;
+        margin-right: 30px;
+        vertical-align: top;
+    }
+    
+    input[type="button"]:first-child {
+        position: absolute;
+        width: 11px;
+        height: 11px;      
+        top: 319px;
+        left: 455px;
+        border: 0;
+        background: url("assets/images/plus.svg") no-repeat top;
+    }
+    
+    .twitter {
+        display: inline-block;
+        width: 329px;
+        height: 233px;
+        vertical-align: top;
+        background-color: #ec9e03;
+    }
+    
+    .twitter img {
+        position: relative;
+        left: 54px;
+        top: 59px;
+    }
+    
+    .number {
+        position: relative;
+        bottom: 99px;
+        left: 286px;
+        font-family: "Segoe WP Light";
+        font-size: 25px;
+        color: white;
+    }
+    
+    .twitter input[type="button"]{
+        position: absolute;
+        width: 11px;
+        height: 11px;      
+        top: 319px;
+        left: 1138px;
+        border: 0;
+        background: url("assets/images/plus.svg") no-repeat top;
+    }
+    
+    .calendar {
+        position: relative;
+        display: inline-block;
+        width: 113px;
+        height: 86px;
+        font-family: "Segoe UI";
+        background-color: #ddb101;
+    }
+    
+    .day {
+        position: relative;
+        bottom: 2px;
+        left: 30px;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .month {
+        position: relative;
+        bottom: 13px;
+        left: 32px;
+        font-size: 21px;
+        font-weight: normal;
+        color: #b26529;
+    }
+
+}
+
+
 /* LIST */
 
 .main-footer {
