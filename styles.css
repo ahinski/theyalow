@@ -52,7 +52,7 @@ body {
     width: 1300px;
 }
 
-main {
+.main {
     background-image: url("assets/images/background.png");
     height: 566px;
 }
@@ -706,4 +706,35 @@ h5 {
 li {
     padding-top: 18px;
     padding-left: 14px;
+}
+
+/* FOOTER */
+.footer {
+    width: 1300px;
+    height: 64px;
+    background-color: #4c4c4c;
+    box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.footer-logo {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    margin-left: 139px;
+}
+
+.footer-heading {
+    position: relative;
+    display: inline-block;
+    bottom: 11px;
+    left: 6px;
+    font-family: "lucida";
+    font-style: italic;
+    font-size: 29px;
+    font-weight: normal;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.42);
 }
