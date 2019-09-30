@@ -107,6 +107,9 @@ h1 {
         height: 62px;
         background: linear-gradient(to bottom, #626262 0%,#464646 100%);
         margin: 0;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
 
     .logo {
@@ -128,7 +131,7 @@ h1 {
     .navbar {
         position: relative;
         display: inline-block;
-        height: 100%;
+        height: 63px;
         width: 454px;
         margin: 0 0 0 4px;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -229,29 +232,36 @@ button img {
         font-size: 19px;
     }
 
-    .navbar img {
-        height: 24px;
-        width: 22px;
-    }
-
     #about {
         width: 171px;
         height: 100%;
         margin: 0;
-        padding-bottom: 0;
-        padding-left: 70px;
+        padding-left: 58px;
         vertical-align: bottom;
         text-align: left;
+    }
+
+    #about img {
+        width: 24px;
+        height: 22px;
+        left: 23px;
+        top: 21px;
     }
     
     #services {
         width: 132px;
         height: 100%;
         margin: 0;
-        padding-bottom: 0;
         margin-left: -3px;
-        padding-left: 42px;
+        padding-left: 38px;
         text-align: left;
+    }
+
+    #services img {
+        width: 23px;
+        height: 22px;
+        left: 7px;
+        top: 22px;
     }
     
     #contact{
@@ -259,9 +269,15 @@ button img {
         height: 100%;
         margin: 0;
         margin-left: -3px;
-        padding-bottom: 0;
-        padding-left: 49px;
+        padding-left: 51px;
         text-align: left;
+    }
+
+    #contact img {
+        width: 28px;
+        height: 21px;
+        left: 12px;
+        top: 21px;
     }
 
     .button-line-1 {
@@ -509,7 +525,7 @@ h3:nth-child(1) {
         width: 640px;
         height: 165px;
         margin-top: -3px;
-        /* box-shadow: 0px -1px 6px 1px rgba(0,0,0,0.5); */
+        box-shadow: 0 0 0 0 rgb(0,0,0);
         background-image: url("assets/images/advan-back.png");
         z-index: 2;
     }
@@ -660,6 +676,10 @@ input[type="button"]:first-child {
 
 input[type="button"]:first-child:hover {
     border: 1px solid black;
+}
+
+.mobile-twitter {
+    display: none;
 }
 
 .twitter {
@@ -912,24 +932,40 @@ input[type=range]:focus::-ms-fill-upper {
         display: none;
     }
 
+    input[type=button]:nth-child(1) {
+        top: 203px;
+        left: 285px;
+    }
+
     .slidecontainer,
     .calendar,
     h4,
-    p {
+    p,
+    .range sub {
         display: none;
+    }
+
+    .twitter input[type="button"]{
+        position: absolute;
+        width: 11px;
+        height: 11px;      
+        top: 204px;
+        left: 286px;
+        border: 0;
+        background: url("assets/images/plus.svg") no-repeat top;
     }
 
     .range {
         position: relative;
-        background-image: url("assets/images/range-back.png");
-        height: 508px;
-        width: 1300px;
+        background-image: url("assets/images/null.png");
+        height: 485px;
+        width: 640px;
         z-index: 1;
     }
     
     .range-content {
-        height: 508px;
-        width: 1040px;
+        height: 485px;
+        width: 640px;
         z-index: 1;
     }
     
@@ -943,23 +979,27 @@ input[type=range]:focus::-ms-fill-upper {
     }
     
     .main-content {
+        width: 640px;
         height: 233px;
-        margin: 31px 0 0 9px;
+        margin-top: 14px;
         text-align: left;
     }
     
     .video-desc {
         display: inline-block;
-        width: 311px;
-        height: 217px;
-        padding-left: 30px;
-        padding-top: 16px;
+        width: 241px;
+        height: 219px;
+        padding-left: 28px;
+        padding-top: 14px;
+        padding-right: 30px;
+        margin-right: 5px;
         font-family: "Segoe WP Light";
         font-size: 29px;
         font-weight: 10;
         color: white;
         background-color: #ec9e03;
         vertical-align: top;
+        line-height: 1.2em;
     }
     
     .main-content video {
@@ -968,81 +1008,128 @@ input[type=range]:focus::-ms-fill-upper {
         top: 0;
         width: 315px;
         height: 232px;
-        margin-left: -4px;
-        margin-right: 30px;
-        vertical-align: top;
-    }
-    
-    input[type="button"]:first-child {
-        position: absolute;
-        width: 11px;
-        height: 11px;      
-        top: 319px;
-        left: 455px;
-        border: 0;
-        background: url("assets/images/plus.svg") no-repeat top;
-    }
-    
-    .twitter {
-        display: inline-block;
-        width: 329px;
-        height: 233px;
-        vertical-align: top;
-        background-color: #ec9e03;
-    }
-    
-    .twitter img {
-        position: relative;
-        left: 54px;
-        top: 59px;
-    }
-    
-    .number {
-        position: relative;
-        bottom: 99px;
-        left: 286px;
-        font-family: "Segoe WP Light";
-        font-size: 25px;
-        color: white;
-    }
-    
-    .twitter input[type="button"]{
-        position: absolute;
-        width: 11px;
-        height: 11px;      
-        top: 319px;
-        left: 1138px;
-        border: 0;
-        background: url("assets/images/plus.svg") no-repeat top;
-    }
-    
-    .calendar {
-        position: relative;
-        display: inline-block;
-        width: 113px;
-        height: 86px;
-        font-family: "Segoe UI";
-        background-color: #ddb101;
-    }
-    
-    .day {
-        position: relative;
-        bottom: 2px;
-        left: 30px;
-        font-size: 50px;
-        font-weight: bold;
-        color: white;
-    }
-    
-    .month {
-        position: relative;
-        bottom: 13px;
-        left: 32px;
-        font-size: 21px;
-        font-weight: normal;
-        color: #b26529;
+        margin-left: 0px;
+        margin-right: 0;
     }
 
+    .twitter {
+        display: none;
+    }
+    
+    .mobile-twitter {
+        display: inline-block;
+        width: 640px;
+        height: 233px;
+        margin-top: 9px;
+        margin-left: -9px;
+        vertical-align: top;
+        background-color: #f5c507;
+    }
+    
+    .mobile-twitter img:nth-child(2) {
+        position: relative;
+        left: 84px;
+        top: 59px;
+    }
+
+    .twitt {
+        position: relative;
+        left: 323px;
+        top: -113px;
+    }
+    
+    .twitt h6 {
+        position: absolute;
+        font-family: "Arial";
+        font-size: 13px;
+        font-weight: 100;
+        color: #8f8e8e;
+    }
+
+    .tw1 {
+        top: 7px;
+        left: 29px;
+    }
+
+    .author1 {
+        top: 23px;
+        left: 29px;
+    }
+
+    .tw2 {
+        top: 63px;
+        left: 29px;
+    }
+
+    .author2 {
+        top: 79px;
+        left: 29px;
+    }
+
+    .tw3 {
+        top: 119px;
+        left: 29px;
+    }
+
+    .author3 {
+        top: 135px;
+        left: 29px;
+    }
+
+    .form {
+        position: relative;
+        width: 272px;
+        margin-top: -104px;
+        margin-left: 335px;
+    }
+
+    .text-input {
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 203px;
+        height: 29px;
+        border: 1px solid #d0a806;
+        -webkit-border-radius: 12px 0 0 12px;
+        border-radius: 12px 0 0 12px;
+        font: normal 16px/normal "Times New Roman", Times, serif;
+        color: rgba(0,142,198,1);
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        background: #ffffff;
+        -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+        -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      }
+
+      .submit {
+        background-color:#d3920f;
+        -moz-border-radius:12px;
+        -webkit-border-radius:12px;
+        border-radius: 0 12px 12px 0px;
+        border: 1px solid #d0a806;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        margin-left: -6px;
+        height: 31px;
+        width: 69px;
+        text-decoration:none;
+    }
+    .submit:hover {
+        background-color:#e3c42b;
+    }
+    .submit:active {
+        position:relative;
+        top:1px;
+    }
 }
 
 
@@ -1066,6 +1153,10 @@ h5 {
     font-size: 43px;
     font-weight: 100;
     color: #f5c506;
+}
+
+.mobile-devices {
+    display: none;
 }
 
 .devices {
@@ -1103,6 +1194,50 @@ li {
     padding-left: 14px;
 }
 
+@media screen and (max-width: 640px) {
+    .list {
+        display: none;
+    }
+
+    .main-footer {
+        width: 640px;
+        height: 466px;
+        margin-top: -10px;
+        background-image: url("null");
+        background-color: #474747;
+    }
+    
+    .main-footer-content {
+        width: 640px;
+        
+    }
+    
+    h5 {
+        position: relative;
+        padding-top: 31px;
+        padding-left: 18px;
+        font-family: "open_sansregular";
+        font-size: 39px;
+        color: #f5c506;
+    }
+    
+    .desk-devices {
+        display: none;
+    }
+    
+    .yellow-circle {
+        margin-left: 26px;
+        margin-top: 76px;
+    }
+
+    .mobile-devices {
+        display: inline-block;
+        margin-top: 28px;
+        margin-left: 19px;
+    }
+    
+}
+
 /* FOOTER */
 .footer {
     width: 1300px;
@@ -1132,4 +1267,28 @@ li {
     text-align: left;
     color: #ffffff;
     text-shadow: 0px 2px 0px rgba(0,0,0,0.42);
+}
+
+
+@media screen and (max-width: 640px) {
+    .footer {
+        width: 640x;
+        height: 43px;
+    }
+    
+    .footer-logo {
+        width: 31px;
+        height: 31px;
+        top: 6px;
+        margin-left: 65px;
+    }
+    
+    .footer-heading {
+        position: relative;
+        display: inline-block;
+        bottom: 3px;
+        left: 8px;
+        font-size: 17px;
+        text-shadow: 0px 2px 0px rgba(0,0,0,0.42);
+    }
 }
